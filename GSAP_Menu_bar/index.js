@@ -5,8 +5,6 @@ var tl = gsap.timeline()
 
 tl.to(".full", {
     right: 0,
-    duration: .5,
-    ease: "power2.inOut"
 })
 
 tl.from(".full h4", {
