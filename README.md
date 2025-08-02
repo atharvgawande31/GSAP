@@ -4,7 +4,7 @@
 This is a fun and interactive animation project built using **HTML**, **CSS**, **JavaScript**, and **GSAP**. The project features a **custom animated cursor** that follows mouse movement and dynamically changes its appearance when hovering over different colored boxes. Each box also contains a subtle overlay.
 
 ---
-
+Target Repo GSAP_Project 
 https://github.com/user-attachments/assets/0933403e-a799-4375-a6b4-59138f930fa6
 
 
