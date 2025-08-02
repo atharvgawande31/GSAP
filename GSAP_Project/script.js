@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 // Mobile menu functionality
 const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
 const mobileMenu = document.querySelector(".mobile-menu");
@@ -63,7 +65,7 @@ function pageAnimation() {
     opacity: 0,
     duration: 0.5,
     stagger: 0.2,
-    x: -100
+    x: -100,
   });
 
   tl.from(".left-content .hero-cta", {
@@ -94,3 +96,27 @@ function pageAnimation() {
 }
 
 pageAnimation();
+
+var tl2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".services",
+    scroller: "body",
+    markers: true,
+    start: "top 70%",
+    end: "top 0",
+    scrub: 2,
+  },
+});
+
+tl2.from(".services span" , {
+  y:30,
+  opacity:0,
+})
+
+tl2.from(".service-list .service-box", {
+  x: -100,
+  opacity: 0,
+  duration: 0.4,
+  stagger: 0.2,
+
+})
